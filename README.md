@@ -17,6 +17,7 @@ on github.com or pushing a commit is all it takes to publish.
 | `for-students-and-staff/*.md` | Student/staff guides (cards for them live in `_includes/guides.html`) |
 | `media-gallery.html` | Soundbites and the "Media Gallery" Google Drive folder |
 | `blog.md` | Blog (no posts yet; not in the navigation) |
+| `_data/current.yml` | "Current work" on the home page: roles, projects, recent publications |
 | `_data/nav.yml` | Top navigation |
 | `_layouts/default.html` | Shared page frame (`<head>`, header, footer) |
 | `_layouts/page.html` | Frame for text pages (title, optional `lead`, `parent`, `wide`) |

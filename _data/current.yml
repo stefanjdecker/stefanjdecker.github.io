@@ -1,0 +1,60 @@
+# "Current work" on the home page. Edit this file to update it.
+# Roles as listed on the official RWTH i5 and Fraunhofer FIT pages; projects as named
+# on the i5 chair page; publications from Google Scholar (October 2026).
+
+roles:
+  - title: Head of the Chair of Databases and Information Systems (i5)
+    org: RWTH Aachen University
+    url: https://dbis.rwth-aachen.de/dbis/
+  - title: Executive Director
+    org: Fraunhofer Institute for Applied Information Technology FIT
+    url: https://www.fit.fraunhofer.de/en/about-us/director.html
+  - title: Scientific Director
+    org: Bonn-Aachen International Center for Information Technology (B-IT)
+    url: https://www.b-it-center.de/
+
+projects:
+  - title: National Research Data Infrastructure (NFDI)
+    text: Germany's research data infrastructure, including the NFDI4Health and NFDI4DataScience consortia.
+    url: https://www.nfdi.de/
+  - title: Internet of Production
+    text: RWTH Aachen University's Cluster of Excellence on data-driven production.
+    url: https://www.iop.rwth-aachen.de/
+  - title: Gaia-X and data spaces
+    text: A federated, sovereign data infrastructure for Europe.
+    url: https://gaia-x.eu/
+  - title: Medical Informatics Initiative
+    text: Making data from patient care usable for medical research, including the SMITH consortium.
+    url: https://www.medizininformatik-initiative.de/en
+
+publications:
+  - year: 2026
+    title: "Conversational Data Management: A Multi-agent Natural Language Interface for Semantic Data Lakes"
+    authors: S. Hoseini, N. Mittelstädt, V. Herrmann, S. Decker, C. Quix
+    venue: ADBIS 2026
+    doi: 10.1007/978-3-032-39820-8_12
+  - year: 2026
+    title: "What Does ODRL Mean? A Cross-Level Ontological Grounding of Permissions, Prohibitions, and Duties in UFO-L"
+    authors: D. Mustafa, C. Lange, G. Guizzardi, D. Collarana, C. Quix, S. Decker
+    venue: FOIS 2026
+    doi: 10.3233/FAIA260776
+  - year: 2026
+    title: "SemTS: Ontology and Vocabularies for the Semantic Categorization of Time Series Knowledge"
+    authors: A. Graß, R. Deshmukh, C. Lange, D. Collarana, C. Beecks, S. Decker
+    venue: ESWC 2026
+    doi: 10.1007/978-3-032-25159-6_10
+  - year: 2025
+    title: "FAIR Data Assessment Using LLMs: The Fair-Way"
+    authors: A. Sharma, S. Sowe, S. Kim, S. Hoseini, F. Limani, Z. Boukhers, C. Lange, S. Decker
+    venue: CIKM 2025
+    doi: 10.1145/3746252.3760811
+  - year: 2025
+    title: "GRAFT – Graph Retrieval Augmented Generation Fine-Tuning Approach"
+    authors: M. Busch, G. Defilippis, P. Weiß, C. Beecks, S. Decker, D. Collarana
+    venue: IEEE BigData 2025
+    doi: 10.1109/BigData66926.2025.11401495
+  - year: 2025
+    title: "The Culture Dataspace (Datenraum Kultur) – a Data-Sovereign Open-Source Digital Infrastructure based on the Eclipse Dataspace Components (EDC) Framework"
+    authors: G. Toubekis, S. Decker
+    venue: ISPRS Archives 2025
+    doi: 10.5194/isprs-archives-XLVIII-M-9-2025-1515-2025

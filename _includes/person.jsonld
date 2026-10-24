@@ -22,7 +22,13 @@
     { "@type": "Organization", "name": "Engineers Ireland" }
   ],
   "knowsAbout": ["Semantic Web", "Knowledge Graphs", "Linked Data", "Data Spaces", "Generative AI"],
+  "identifier": { "@type": "PropertyValue", "propertyID": "ORCID", "value": "0000-0001-6324-7164" },
   "sameAs": [
+    "https://orcid.org/0000-0001-6324-7164",
+    "https://dblp.org/pid/d/StefanDecker",
+    "http://www.wikidata.org/entity/Q54303353",
+    "https://en.wikipedia.org/wiki/Stefan_Decker",
+    "https://www.semanticscholar.org/author/1685642",
     "https://scholar.google.com/citations?user=uhVkSswAAAAJ",
     "https://www.linkedin.com/in/stefandecker",
     "https://twitter.com/stefanjdecker"

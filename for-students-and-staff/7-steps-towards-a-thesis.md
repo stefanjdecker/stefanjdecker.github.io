@@ -6,7 +6,7 @@ parent:
   title: For Students and Staff
   url: /for-students-and-staff/
 ---
-By [Eduard Hovy](http://www.isi.edu/natural-language/people/hovy.html)  
+By [Eduard Hovy](https://en.wikipedia.org/wiki/Eduard_Hovy)  
 USC Information Sciences Institute
 {: .byline}
 

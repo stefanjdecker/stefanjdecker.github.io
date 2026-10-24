@@ -70,13 +70,56 @@ title: Professor Stefan Decker
   </div>
 </section>
 
-<section class="section" id="about">
+<section class="section" id="now">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Now</p>
+      <h2>Current work</h2>
+    </div>
+    <div class="now-grid">
+      <div>
+        <h3 class="label">Roles</h3>
+        <ul class="roles">
+          {% for role in site.data.current.roles %}
+          <li>
+            <span class="role-title">{{ role.title }}</span>
+            <a href="{{ role.url }}">{{ role.org }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <h3 class="label">Projects</h3>
+        <ul class="projects">
+          {% for project in site.data.current.projects %}
+          <li>
+            <a href="{{ project.url }}">{{ project.title }}</a>
+            <span>{{ project.text }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div>
+        <h3 class="label">Recent publications</h3>
+        <ol class="pubs">
+          {% for pub in site.data.current.publications %}
+          <li>
+            <a class="pub-title" href="https://doi.org/{{ pub.doi }}">{{ pub.title }}</a>
+            <span class="pub-meta">{{ pub.authors | replace: "S. Decker", "<strong>S. Decker</strong>" }} · {{ pub.venue }}</span>
+          </li>
+          {% endfor %}
+        </ol>
+        <p class="more"><a href="https://scholar.google.com/citations?user=uhVkSswAAAAJ&amp;hl=en&amp;view_op=list_works&amp;sortby=pubdate">All publications on Google Scholar</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section band" id="about">
   <div class="wrap about-grid">
     <div>
       <p class="eyebrow">About</p>
       <h2 class="section-title">About me</h2>
       <p class="lead">I am a professor at the <a href="http://www.rwth-aachen.de/cms/~a/root/lidx/1/">RWTH Aachen University</a>, and a Director of the Fraunhofer <a href="https://www.fit.fraunhofer.de/en.html">FIT Research Institute</a>, part of the <a href="https://www.fraunhofer.de/en.html">Fraunhofer Society</a>.</p>
-      <p>My main research field is the <a href="http://www.semanticweb.org">Semantic Web</a>. The usual academic self promotion: my <a href="http://scholar.google.com/citations?user=uhVkSswAAAAJ&amp;hl=en">Google Scholar profile</a> claims my publications have received more than 30000 citations and I have an h-index of 84 (the <a href="http://en.wikipedia.org/wiki/H-index">h-index</a> is a metric aiming to measure scientific productivity). Google Scholar also searches authors per organisations (e.g., all authors in Google Scholar from RWTH Aachen) or even (exploiting the country code) from a country. I also maintain a <a href="http://www.linkedin.com/in/stefandecker">Linked-In profile</a>.</p>
+      <p>My main research field is the <a href="https://www.w3.org/2001/sw/">Semantic Web</a>. The usual academic self promotion: my <a href="http://scholar.google.com/citations?user=uhVkSswAAAAJ&amp;hl=en">Google Scholar profile</a> claims my publications have received more than 30000 citations and I have an h-index of 84 (the <a href="http://en.wikipedia.org/wiki/H-index">h-index</a> is a metric aiming to measure scientific productivity). Google Scholar also searches authors per organisations (e.g., all authors in Google Scholar from RWTH Aachen) or even (exploiting the country code) from a country. I also maintain a <a href="http://www.linkedin.com/in/stefandecker">Linked-In profile</a>.</p>
     </div>
     <div>
       <h3 class="label">Career</h3>
@@ -94,7 +137,7 @@ title: Professor Stefan Decker
         <li>
           <span class="career-when">12 years</span>
           <span class="career-where">National University of Ireland, Galway</span>
-          <span class="career-what">Director of the <a href="http://www.deri.ie/">Digital Enterprise Research Institute</a> and later Insight</span>
+          <span class="career-what">Director of the <a href="https://en.wikipedia.org/wiki/Digital_Enterprise_Research_Institute">Digital Enterprise Research Institute</a> and later Insight</span>
         </li>
         <li>
           <span class="career-when">2 years</span>
@@ -103,7 +146,7 @@ title: Professor Stefan Decker
         </li>
         <li>
           <span class="career-when">3 years</span>
-          <span class="career-where">Stanford University, Computer Science Department (<a href="http://infolab.stanford.edu/">Database Group</a>)</span>
+          <span class="career-where">Stanford University, Computer Science Department (<a href="https://web.archive.org/web/20260928095154/http://infolab.stanford.edu/">Database Group</a>)</span>
           <span class="career-what">PostDoc and Research Associate</span>
         </li>
         <li>
@@ -116,7 +159,7 @@ title: Professor Stefan Decker
   </div>
 </section>
 
-<section class="section band" id="accomplishments">
+<section class="section" id="accomplishments">
   <div class="wrap aside-grid">
     <div class="section-head aside-head">
       <p class="eyebrow">Track record</p>
@@ -134,23 +177,23 @@ title: Professor Stefan Decker
       </li>
       <li>
         <h3>Ireland's Open Data Strategy</h3>
-        <p>My team and myself (mostly my team) drafted the <a href="http://www.per.gov.ie/en/minister-howlin-launches-open-data-initiative/">governmental Irish Open Data Strategy</a> and provided the alpha version of the <a href="http://data.gov.ie/">Ireland's Open Data Portal</a>.</p>
+        <p>My team and myself (mostly my team) drafted the <a href="https://web.archive.org/web/20190402194625/https://www.per.gov.ie/en/minister-howlin-launches-open-data-initiative/">governmental Irish Open Data Strategy</a> and provided the alpha version of the <a href="https://data.gov.ie/">Ireland's Open Data Portal</a>.</p>
       </li>
       <li>
         <h3>Growing DERI</h3>
-        <p>After I took over the directorship of DERI in 2006 DERI doubled in size and far more-than-doubled its scientific output and reputation. According to Microsoft Academic Search until DERI transitioned into the Insight Centre for Data Analytics, DERI was <a href="http://academic.research.microsoft.com/RankList?entitytype=7&amp;topdomainid=2&amp;subdomainid=15&amp;last=5">recognised as one of the top organisations in World-Wide-Web research</a>. For these successes DERI was selected by SFI for inclusion into the Insight Centre for Data Analytics, enabling research funding for another 6 years.</p>
+        <p>After I took over the directorship of DERI in 2006 DERI doubled in size and far more-than-doubled its scientific output and reputation. According to Microsoft Academic Search until DERI transitioned into the Insight Centre for Data Analytics, DERI was <a href="https://web.archive.org/web/20160324031736/http://academic.research.microsoft.com:80/RankList?entitytype=7&amp;topdomainid=2&amp;subdomainid=15&amp;last=5">recognised as one of the top organisations in World-Wide-Web research</a>. For these successes DERI was selected by SFI for inclusion into the Insight Centre for Data Analytics, enabling research funding for another 6 years.</p>
       </li>
       <li>
         <h3>The Social Semantic Desktop and NEPOMUK</h3>
-        <p>I coined and established the term <a href="http://www.deri.ie/publications/techpapers/documents/DERI-TR-2004-05-02.pdf">Social Semantic Desktop</a> for Personal Knowledge Management with Semantic Web Methods and initiated a large scale EU project (Budget: 17.5 M Euro) dubbed NEPOMUK which included multinationals like IBM, HP and SAP, small companies like Cognium, research institutes like FZI, DFKI, L3S and DERI, application partners like Institute Louis Pasteur, and a dissemination partner like Edge-IT (Mandriva Linux). The goal of the project was to provide a crystallization point for the development of the Semantic Desktop infrastructure. The results are now part of KDE and distributed with Linux.</p>
+        <p>I coined and established the term <a href="https://web.archive.org/web/20170811140519/http://www.deri.ie/fileadmin/documents/DERI-TR-2004-05-02.pdf">Social Semantic Desktop</a> for Personal Knowledge Management with Semantic Web Methods and initiated a large scale EU project (Budget: 17.5 M Euro) dubbed NEPOMUK which included multinationals like IBM, HP and SAP, small companies like Cognium, research institutes like FZI, DFKI, L3S and DERI, application partners like Institute Louis Pasteur, and a dissemination partner like Edge-IT (Mandriva Linux). The goal of the project was to provide a crystallization point for the development of the Semantic Desktop infrastructure. The results are now part of KDE and distributed with Linux.</p>
       </li>
       <li>
         <h3>The Semantic Web Working Symposium</h3>
-        <p>I initiated and co-organized (with Isabel Cruz, Jerome Euzenat, and Deborah McGuinness) the <a href="http://www.semanticweb.org/SWWS/">Semantic Web Working Symposium</a> at Stanford University, the first large scale Semantic Web event (&gt; 250 participants), which spanned the International Semantic Web Conference, which is now organized by the <a href="http://www.iswsa.org/">Semantic Web Science Association</a>.</p>
+        <p>I initiated and co-organized (with Isabel Cruz, Jerome Euzenat, and Deborah McGuinness) the <a href="https://web.archive.org/web/20051124210836/http://www.semanticweb.org:80/SWWS/">Semantic Web Working Symposium</a> at Stanford University, the first large scale Semantic Web event (&gt; 250 participants), which spanned the International Semantic Web Conference, which is now organized by the <a href="http://www.iswsa.org/">Semantic Web Science Association</a>.</p>
       </li>
       <li>
         <h3>From SHIQ to OWL</h3>
-        <p>Together with Ian Horrocks I created an RDF representation for the Description Logic SHIQ. The result was merged with the at the time XML-based OIL. Then the RDF part of OIL was the main input for DAML+OIL (I was member of the <a href="http://www.daml.org/2001/03/daml+oil-index">DAML+OIL Joint Committee</a>), which in turn was the main input for <a href="http://www.w3.org/2004/OWL/">OWL</a> - the Web Ontology Language.</p>
+        <p>Together with Ian Horrocks I created an RDF representation for the Description Logic SHIQ. The result was merged with the at the time XML-based OIL. Then the RDF part of OIL was the main input for DAML+OIL (I was member of the <a href="https://web.archive.org/web/20170323045400/http://www.daml.org:80/2001/03/daml+oil-index">DAML+OIL Joint Committee</a>), which in turn was the main input for <a href="http://www.w3.org/2004/OWL/">OWL</a> - the Web Ontology Language.</p>
       </li>
       <li>
         <h3>RDF for Protégé</h3>
@@ -158,15 +201,15 @@ title: Professor Stefan Decker
       </li>
       <li>
         <h3>HyperCuP</h3>
-        <p>Together with Mario Schlosser, Michael Sintek and Wolfgang Nejdl we created <a href="http://infolab.stanford.edu/%7Eschloss/hypercup/">HyperCuP</a>, the first Ontology-based routing algorithm and hypercube topology for P2P networks (the main genius behind HyperCuP was Mario). HyperCuP has been used by a couple of projects as a P2P topology.</p>
+        <p>Together with Mario Schlosser, Michael Sintek and Wolfgang Nejdl we created <a href="https://web.archive.org/web/20120126025456/http://infolab.stanford.edu:80/~schloss/hypercup/">HyperCuP</a>, the first Ontology-based routing algorithm and hypercube topology for P2P networks (the main genius behind HyperCuP was Mario). HyperCuP has been used by a couple of projects as a P2P topology.</p>
       </li>
       <li>
         <h3>Edutella</h3>
-        <p>Together with Wolfgang Nejdl I cofounded the <a href="http://www2002.org/CDROM/refereed/597/">Edutella</a> project, the first metadata exchange infrastructure for RDF.</p>
+        <p>Together with Wolfgang Nejdl I cofounded the <a href="https://web.archive.org/web/20190126162805/http://www2002.org/CDROM/refereed/597/">Edutella</a> project, the first metadata exchange infrastructure for RDF.</p>
       </li>
       <li>
         <h3>The Semantic Web information foodchain</h3>
-        <p>The Semantic Web information foodchain presented in an <a href="http://link.springer.de/link/service/series/0558/bibs/1923/19230490.htm">ECDL 2000 paper</a> and depicted at <a href="http://www.semanticweb.org/about.html">SemanticWeb.org</a> is widely used as an architectural model and motivation for Semantic Web technology.</p>
+        <p>The Semantic Web information foodchain presented in an <a href="https://doi.org/10.1007/3-540-45268-0_69">ECDL 2000 paper</a> and depicted at <a href="https://web.archive.org/web/20051109115709/http://semanticweb.org:80/about.html">SemanticWeb.org</a> is widely used as an architectural model and motivation for Semantic Web technology.</p>
       </li>
       <li>
         <h3>A DARPA grant at Stanford</h3>
@@ -188,7 +231,7 @@ title: Professor Stefan Decker
   </div>
 </section>
 
-<section class="section" id="vision">
+<section class="section band" id="vision">
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Vision</p>
@@ -205,7 +248,7 @@ title: Professor Stefan Decker
     <ul class="resources">
       <li>
         <span class="resource-badge">1945</span>
-        <a href="http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/">As We May Think</a>
+        <a href="https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/">As We May Think</a>
         <span class="resource-meta">Vannevar Bush · Atlantic Monthly, July 1945</span>
       </li>
       <li>
@@ -215,7 +258,7 @@ title: Professor Stefan Decker
       </li>
       <li>
         <span class="resource-badge">1968</span>
-        <a href="http://web.stanford.edu/dept/SUL/library/extra4/sloan/MouseSite/1968Demo.html">“Mother of All Demos”</a>
+        <a href="https://web.archive.org/web/20210207162724/https://web.stanford.edu/dept/SUL/library/extra4/sloan/mousesite/1968Demo.html">“Mother of All Demos”</a>
         <span class="resource-meta">Douglas Engelbart · Moscone Center, San Francisco, 1968</span>
       </li>
       <li>
@@ -225,7 +268,7 @@ title: Professor Stefan Decker
       </li>
     </ul>
 
-    <p class="note">And here is confirmation that part of it transitions already into reality: 10 years after we introduced the concepts in the "<a href="http://www.deri.ie/fileadmin/documents/DERI-TR-2004-05-02.pdf">Social Semantic Desktop Paper</a>" and the subsequent Nepomuk project Microsoft implements a Semantic Desktop - see the brain? Now if only Office Graph would work also with non-Microsoft products - and maybe even across systems...? Maybe build the capabilities into the operating system?</p>
+    <p class="note">And here is confirmation that part of it transitions already into reality: 10 years after we introduced the concepts in the "<a href="https://web.archive.org/web/20170811140519/http://www.deri.ie/fileadmin/documents/DERI-TR-2004-05-02.pdf">Social Semantic Desktop Paper</a>" and the subsequent Nepomuk project Microsoft implements a Semantic Desktop - see the brain? Now if only Office Graph would work also with non-Microsoft products - and maybe even across systems...? Maybe build the capabilities into the operating system?</p>
 
     <div class="media-row reverse">
       <div class="media-text">
@@ -236,7 +279,7 @@ title: Professor Stefan Decker
   </div>
 </section>
 
-<section class="section band" id="anecdotes">
+<section class="section" id="anecdotes">
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Anecdotes</p>
@@ -251,7 +294,7 @@ title: Professor Stefan Decker
       <article class="card">
         <p class="card-kicker">Stanford</p>
         <h3>The original Google server</h3>
-        <p>The <a href="http://infolab.stanford.edu/pub/voy/museum/pictures/display/0-4-Google.htm">original Google Server</a> consisting of 10 4GB disks and a case built out of Lego was for a while in my office in Stanford University.</p>
+        <p>The <a href="https://web.archive.org/web/20261014101834/http://infolab.stanford.edu/pub/voy/museum/pictures/display/0-4-Google.htm">original Google Server</a> consisting of 10 4GB disks and a case built out of Lego was for a while in my office in Stanford University.</p>
       </article>
       <article class="card">
         <p class="card-kicker">Stanford</p>
@@ -274,7 +317,7 @@ title: Professor Stefan Decker
   </div>
 </section>
 
-<section class="section" id="students">
+<section class="section band" id="students">
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Guides</p>
