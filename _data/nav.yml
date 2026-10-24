@@ -1,18 +1,12 @@
-# Sidebar navigation. URLs match the paths of the old Google Site.
-- title: Professor Stefan Decker
-  url: /
-- title: For Students and Staff
+# Main navigation. Page URLs match the old Google Site; /blog stays reachable but
+# is not listed while it has no posts.
+- title: Research
+  url: /#mission
+- title: About
+  url: /#about
+- title: Students & Staff
   url: /for-students-and-staff/
-  children:
-    - title: 7 Steps Towards a Thesis
-      url: /for-students-and-staff/7-steps-towards-a-thesis
-    - title: How to announce an academic talk?
-      url: /for-students-and-staff/how-to-announce-an-academic-talk
-    - title: The Heilmeier Catechism
-      url: /for-students-and-staff/the-heilmeier-catechism
-- title: CV and Publications
+- title: CV & Publications
   url: /cv-and-publications
-- title: Media Gallery
+- title: Media
   url: /media-gallery
-- title: blog
-  url: /blog

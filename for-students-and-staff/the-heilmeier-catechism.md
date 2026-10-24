@@ -1,10 +1,11 @@
 ---
-layout: default
+layout: page
 title: The Heilmeier Catechism
 permalink: /for-students-and-staff/the-heilmeier-catechism
+parent:
+  title: For Students and Staff
+  url: /for-students-and-staff/
 ---
-# The Heilmeier Catechism
-
 [Gio Wiederhold](http://www-db.stanford.edu/people/gio.html) (see also [here](http://www.iicm.tugraz.at/home/hm_hp/XPERTEN/XPERTEN_reihe/reihe_medien/moller400)) introduced me to the "Heilmeier Catechism". As director of [ARPA](http://www.darpa.mil/) [George Heilmeier](http://en.wikipedia.org/wiki/George_H._Heilmeier) had a set of questions he expected every proposal for a new research program to answer. He referred to them as the Heilmeier Catechism. It's useful to answer these questions for any individual research project - for yourself and for communicating to others what you hope to accomplish. These questions are:
 
 1. What is the problem, why is it hard?

@@ -1,10 +1,11 @@
 ---
-layout: default
+layout: page
 title: How to announce an academic talk?
 permalink: /for-students-and-staff/how-to-announce-an-academic-talk
+parent:
+  title: For Students and Staff
+  url: /for-students-and-staff/
 ---
-# How to announce an academic talk?
-
 Giving talks is one of the frequent activities academics (and other professionals) do in order to disseminate knowledge and ideas. An academic talk announcement contains usually the following ingredients (besides the announcement of time and place):
 
 1. A *title*. This is the first item somebody will check if your talk is worth their while. A title should be short and still capture the essence of your presentation.

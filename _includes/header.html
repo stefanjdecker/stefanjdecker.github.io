@@ -1,0 +1,17 @@
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      {% include graph-mark.svg %}
+      <span>Stefan Decker</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        {% for item in site.data.nav %}
+        {% assign current = false %}
+        {% unless item.url contains "#" %}{% if page.url contains item.url %}{% assign current = true %}{% endif %}{% endunless %}
+        <li><a href="{{ item.url | relative_url }}"{% if current %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

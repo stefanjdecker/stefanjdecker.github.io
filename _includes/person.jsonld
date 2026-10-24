@@ -1,0 +1,31 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "{{ '/#me' | absolute_url }}",
+  "name": "Stefan Decker",
+  "honorificPrefix": "Prof. Dr.",
+  "url": "{{ '/' | absolute_url }}",
+  "image": "{{ '/assets/img/stefan-decker.jpg' | absolute_url }}",
+  "jobTitle": ["Professor", "Director of Fraunhofer FIT"],
+  "worksFor": [
+    { "@type": "CollegeOrUniversity", "name": "RWTH Aachen University", "url": "https://www.rwth-aachen.de" },
+    { "@type": "ResearchOrganization", "name": "Fraunhofer FIT", "url": "https://www.fit.fraunhofer.de/en.html",
+      "parentOrganization": { "@type": "Organization", "name": "Fraunhofer-Gesellschaft", "url": "https://www.fraunhofer.de/en.html" } }
+  ],
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "University of Karlsruhe (now KIT)" },
+    { "@type": "CollegeOrUniversity", "name": "University of Kaiserslautern" }
+  ],
+  "memberOf": [
+    { "@type": "Organization", "name": "Royal Irish Academy" },
+    { "@type": "Organization", "name": "Engineers Ireland" }
+  ],
+  "knowsAbout": ["Semantic Web", "Knowledge Graphs", "Linked Data", "Data Spaces", "Generative AI"],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=uhVkSswAAAAJ",
+    "https://www.linkedin.com/in/stefandecker",
+    "https://twitter.com/stefanjdecker"
+  ]
+}
+</script>

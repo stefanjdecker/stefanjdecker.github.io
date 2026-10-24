@@ -1,0 +1,13 @@
+{% comment %}
+  Click-to-load YouTube video: nothing is requested from YouTube until the visitor
+  presses play. Without JavaScript the card is a plain link to the video.
+  Parameters: id, title, channel.
+{% endcomment %}
+<figure class="video">
+  <a class="video-facade" href="https://www.youtube.com/watch?v={{ include.id }}" data-youtube="{{ include.id }}" aria-label="Play video: {{ include.title }}">
+    <span class="video-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg></span>
+    <span class="video-title">{{ include.title }}</span>
+    <span class="video-note">YouTube · loads when you press play</span>
+  </a>
+  <figcaption>{{ include.caption | default: include.channel }}</figcaption>
+</figure>

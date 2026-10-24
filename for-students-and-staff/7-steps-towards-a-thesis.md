@@ -1,13 +1,14 @@
 ---
-layout: default
+layout: page
 title: 7 Steps Towards a Thesis
 permalink: /for-students-and-staff/7-steps-towards-a-thesis
+parent:
+  title: For Students and Staff
+  url: /for-students-and-staff/
 ---
-# 7 Steps Towards a Thesis
-
-By [Eduard Hovy](http://www.isi.edu/natural-language/people/hovy.html)
-
+By [Eduard Hovy](http://www.isi.edu/natural-language/people/hovy.html)  
 USC Information Sciences Institute
+{: .byline}
 
 1. The idea
    - Is there a claim?
