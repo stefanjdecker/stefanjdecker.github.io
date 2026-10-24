@@ -1,0 +1,20 @@
+title: Stefan Decker's Homepage
+description: >-
+  Professor Stefan Decker, RWTH Aachen University and Director of Fraunhofer FIT.
+  Knowledge Graphs, Semantic Web, data spaces and AI.
+url: https://www.stefandecker.org
+lang: en
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

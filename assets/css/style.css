@@ -1,0 +1,163 @@
+/* Layout and typography modelled on the former Google Sites theme:
+   light sidebar navigation on the left, Lato, centred page titles. */
+
+:root {
+  --text: #212121;
+  --muted: #6b6b6b;
+  --line: #e4e4e4;
+  --panel: #f0f0f0;
+  --accent: #00579c;
+  --sidebar-width: 17rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--text);
+  font: 400 1rem/1.65 Lato, "Helvetica Neue", Arial, sans-serif;
+}
+
+a { color: inherit; text-decoration: underline; text-underline-offset: 0.15em; }
+a:hover { color: var(--accent); }
+
+img { max-width: 100%; height: auto; }
+
+.skip-link { position: absolute; left: -999px; }
+.skip-link:focus { left: 1rem; top: 1rem; background: #fff; padding: 0.5rem 1rem; z-index: 10; }
+
+/* ---- Sidebar ---------------------------------------------------------- */
+
+.site { display: flex; min-height: 100vh; }
+
+.sidebar {
+  flex: 0 0 var(--sidebar-width);
+  padding: 2.5rem 1.5rem 2rem 2rem;
+}
+
+.site-title {
+  display: block;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+}
+.site-title img { display: block; margin-bottom: 1.75rem; }
+.site-title:hover { color: inherit; }
+
+.sidebar nav { margin-top: 2.5rem; }
+.sidebar ul { list-style: none; margin: 0; padding: 0; }
+.sidebar li { margin: 0 0 1.1rem; }
+.sidebar li ul { display: none; margin: 1.1rem 0 0 1.25rem; }
+.sidebar li.open > ul { display: block; }
+.sidebar nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 0.95rem;
+}
+.sidebar nav a:hover { color: var(--text); }
+.sidebar nav a[aria-current="page"] { color: var(--text); font-weight: 700; }
+
+/* ---- Content ---------------------------------------------------------- */
+
+.content {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 52rem;
+  padding: 2.5rem 2rem 4rem;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  line-height: 1.2;
+  text-align: center;
+  margin: 0.25rem 0 2.5rem;
+}
+h2 { font-weight: 700; font-size: 1.35rem; margin: 3rem 0 1rem; }
+h3 { font-weight: 700; font-size: 1.05rem; margin: 2rem 0 0.75rem; }
+
+p, ul, ol { margin: 0 0 1rem; }
+li { margin-bottom: 0.35rem; }
+li > ul, li > ol { margin: 0.35rem 0 0.5rem; }
+
+.lead-links { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 2.5rem; }
+
+/* Profile block on the home page */
+.profile {
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+  gap: 1.75rem;
+  align-items: start;
+  margin-bottom: 2.5rem;
+}
+.profile img { width: 100%; display: block; }
+.profile .links { margin-top: 1.5rem; font-size: 0.85rem; font-weight: 700; }
+.profile .links a { display: block; }
+
+/* "My Mission" box with the bouncing RDF logo */
+.mission {
+  position: relative;
+  overflow: hidden;
+  border: 0.5rem solid var(--panel);
+  padding: 2.25rem 2.5rem 2rem;
+  margin: 0 0 3rem;
+  color: #555;
+  font-size: 0.92rem;
+}
+.mission h2 { margin: 0 0 0.25rem; font-size: 1.25rem; color: #555; }
+.mission .tagline { font-style: italic; font-size: 1.05rem; margin-bottom: 1.25rem; }
+.mission canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Responsive 16:9 embeds (YouTube) */
+.video {
+  position: relative;
+  max-width: 34rem;
+  aspect-ratio: 16 / 9;
+  margin: 0 0 2rem;
+  background: #000;
+}
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+/* Google Docs / Drive embeds */
+.doc-embed { width: 100%; height: 80vh; min-height: 30rem; border: 1px solid var(--line); }
+.folder-embed { width: 100%; height: 22rem; border: 1px solid var(--line); }
+
+.soundbites { border-collapse: collapse; margin: 0 0 2.5rem; }
+.soundbites td { vertical-align: top; padding: 0.75rem 1rem 0.75rem 0; border-bottom: 1px solid var(--line); }
+.soundbites td:first-child { width: 24.75rem; }
+.soundbites iframe { width: 23.75rem; height: 3.5rem; border: 0; }
+
+.subpages { font-size: 1.1rem; }
+
+/* ---- Small screens: sidebar becomes a header -------------------------- */
+
+@media (max-width: 52rem) {
+  .site { display: block; }
+  .sidebar { padding: 1.25rem 1rem 0.5rem; border-bottom: 1px solid var(--line); }
+  .site-title { display: flex; align-items: center; gap: 0.75rem; font-size: 1.25rem; }
+  .site-title img { margin: 0; width: 28px; height: auto; }
+  .sidebar nav { margin-top: 1rem; }
+  .sidebar nav > ul { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; }
+  .sidebar li { margin: 0 0 0.4rem; }
+  .sidebar li.open > ul { display: none; }
+  .content { padding: 1.75rem 1rem 3rem; }
+  .profile { grid-template-columns: 1fr; }
+  .profile img { max-width: 12rem; }
+  .mission { padding: 1.5rem 1.25rem; }
+  .soundbites, .soundbites tbody, .soundbites tr, .soundbites td { display: block; }
+  .soundbites td, .soundbites td:first-child { width: auto; border: 0; padding: 0.25rem 0; }
+  .soundbites iframe { max-width: 100%; }
+  .soundbites tr { border-bottom: 1px solid var(--line); padding: 0.75rem 0; }
+}
