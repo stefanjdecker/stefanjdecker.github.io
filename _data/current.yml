@@ -17,15 +17,9 @@ projects:
   - title: National Research Data Infrastructure (NFDI)
     text: Germany's research data infrastructure, including the NFDI4Health and NFDI4DataScience consortia.
     url: https://www.nfdi.de/
-  - title: Internet of Production
-    text: RWTH Aachen University's Cluster of Excellence on data-driven production.
-    url: https://www.iop.rwth-aachen.de/
   - title: Gaia-X and data spaces
     text: A federated, sovereign data infrastructure for Europe.
     url: https://gaia-x.eu/
-  - title: Medical Informatics Initiative
-    text: Making data from patient care usable for medical research, including the SMITH consortium.
-    url: https://www.medizininformatik-initiative.de/en
 
 publications:
   - year: 2026
