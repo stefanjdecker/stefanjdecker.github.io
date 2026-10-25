@@ -1,5 +1,5 @@
 # "Current work" on the home page. Edit this file to update it.
-# Roles as listed on the official RWTH i5 and Fraunhofer FIT pages; projects as named
+# Roles as listed on the official RWTH i5, Fraunhofer FIT and RfII pages; projects as named
 # on the i5 chair and Fraunhofer FIT project pages; publications from Google Scholar (October 2026).
 
 roles:
@@ -12,6 +12,9 @@ roles:
   - title: Scientific Director
     org: Bonn-Aachen International Center for Information Technology (B-IT)
     url: https://www.b-it-center.de/
+  - title: Member
+    org: German Council for Information Infrastructures (RfII)
+    url: https://rfii.de/en/council/
 
 projects:
   - title: National Research Data Infrastructure (NFDI)
