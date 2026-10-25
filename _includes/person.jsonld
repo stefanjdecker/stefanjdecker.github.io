@@ -20,7 +20,7 @@
   "memberOf": [
     { "@type": "Organization", "name": "Royal Irish Academy" },
     { "@type": "Organization", "name": "Engineers Ireland" },
-    { "@type": "Organization", "name": "German Council for Information Infrastructures (RfII)", "url": "https://rfii.de/en/" }
+    { "@type": "Organization", "name": "German Council for Scientific Information Infrastructures (RfII)", "url": "https://rfii.de/en/" }
   ],
   "knowsAbout": ["Semantic Web", "Knowledge Graphs", "Linked Data", "Data Spaces", "Generative AI"],
   "identifier": { "@type": "PropertyValue", "propertyID": "ORCID", "value": "0000-0001-6324-7164" },
