@@ -1,6 +1,6 @@
 # "Current work" on the home page. Edit this file to update it.
 # Roles as listed on the official RWTH i5 and Fraunhofer FIT pages; projects as named
-# on the i5 chair page; publications from Google Scholar (October 2026).
+# on the i5 chair and Fraunhofer FIT project pages; publications from Google Scholar (October 2026).
 
 roles:
   - title: Head of the Chair of Databases and Information Systems (i5)
@@ -20,6 +20,9 @@ projects:
   - title: Gaia-X and data spaces
     text: A federated, sovereign data infrastructure for Europe.
     url: https://gaia-x.eu/
+  - title: JUPITER AI Factory (JAIF)
+    text: A EuroHPC AI Factory built around JUPITER, Europe's first exascale supercomputer.
+    url: https://jaif.ai/
 
 publications:
   - year: 2026
