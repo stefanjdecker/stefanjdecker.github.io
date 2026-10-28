@@ -1,5 +1,4 @@
-# Main navigation. Page URLs match the old Google Site; /blog stays reachable but
-# is not listed while it has no posts.
+# Main navigation. Page URLs match the old Google Site.
 - title: Research
   url: /#mission
 - title: About
@@ -10,3 +9,5 @@
   url: /cv-and-publications
 - title: Media
   url: /media-gallery
+- title: Blog
+  url: /blog/

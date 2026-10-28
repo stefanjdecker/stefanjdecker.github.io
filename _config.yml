@@ -4,6 +4,16 @@ description: >-
   Knowledge Graphs, Semantic Web, data spaces and AI.
 url: https://www.stefandecker.org
 lang: en
+timezone: Europe/Berlin
+author: Stefan Decker
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /blog/:year/:month/:day/:title/
 
 markdown: kramdown
 kramdown:
@@ -12,6 +22,7 @@ kramdown:
 
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
 
 exclude:
   - README.md

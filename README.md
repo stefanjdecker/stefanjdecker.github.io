@@ -16,7 +16,10 @@ on github.com or pushing a commit is all it takes to publish.
 | `cv-and-publications.md` | CV page; embeds the Google Doc "CV-Stefan-Decker" (edit the Doc to update it) |
 | `for-students-and-staff/*.md` | Student/staff guides (cards for them live in `_includes/guides.html`) |
 | `media-gallery.html` | Soundbites and the "Media Gallery" Google Drive folder |
-| `blog.md` | Blog (no posts yet; not in the navigation) |
+| `blog.md` | Blog index; automatically lists published posts, newest first |
+| `_posts/YYYY-MM-DD-title.md` | Published blog entries |
+| `_drafts/post-template.md` | Starter template; drafts are not published |
+| `_layouts/post.html` | Blog entry layout, date, author, and older/newer links |
 | `_data/current.yml` | "Current work" on the home page: roles, projects, recent publications |
 | `_data/nav.yml` | Top navigation |
 | `_layouts/default.html` | Shared page frame (`<head>`, header, footer) |
@@ -43,6 +46,38 @@ Add it to `_data/nav.yml` to show it in the navigation.
 
 To change the nodes around the portrait, edit `NODES` in `_tools/hero_graph.py` and run
 `python3 _tools/hero_graph.py _includes/hero-graph.svg`.
+
+## Publishing a blog post
+
+1. Copy `_drafts/post-template.md` to `_posts/YYYY-MM-DD-your-post-title.md`,
+   using the publication date and a short, lowercase filename with hyphens.
+2. Replace the title, description, and body with your text. The description
+   appears on the blog index and in search/share metadata. If omitted, the
+   index uses the opening paragraph instead.
+3. Commit the new file to `main`. GitHub Pages builds the post, adds it to
+   `/blog/` and the Atom/RSS subscription feed at `/feed.xml` automatically.
+
+For example, `_posts/2026-10-28-knowledge-graphs-and-ai.md` becomes
+`/blog/2026/10/28/knowledge-graphs-and-ai/`:
+
+```markdown
+---
+title: "Your post title"
+description: "A short summary of the post."
+---
+Your opening paragraph.
+
+## A section heading
+
+The rest of your post, with **emphasis**, lists, and links as needed.
+```
+
+Posts use the blog layout and Stefan Decker as the author by default. An
+optional `author` field overrides the displayed name. Keep unfinished entries
+in `_drafts/`; preview them with `bundle exec jekyll serve --drafts`. Do not put
+confidential material in drafts: this repository is public even though drafts
+do not appear on the website. Future-dated posts are omitted until their date
+has passed and the next site build runs; publication is not scheduled automatically.
 
 ## Local preview
 

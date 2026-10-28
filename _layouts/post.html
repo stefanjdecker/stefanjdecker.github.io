@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<article class="page blog-post">
+  <header class="page-head">
+    <p class="eyebrow"><a href="{{ '/blog/' | relative_url }}">← Blog</a></p>
+    <h1>{{ page.title | escape }}</h1>
+    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%e %B %Y" }}</time> <span aria-hidden="true">·</span> {{ page.author | default: site.author | escape }}</p>
+    {% if page.description %}<p class="lead">{{ page.description | escape }}</p>{% endif %}
+  </header>
+  <div class="prose post-body">
+    {{ content }}
+  </div>
+  <footer class="prose post-footer">
+    {% if page.previous or page.next %}
+    <nav class="post-pagination" aria-label="Other blog posts">
+      {% if page.previous %}
+      <a href="{{ page.previous.url | relative_url }}" rel="prev"><span class="post-meta">← Older post</span><span>{{ page.previous.title | escape }}</span></a>
+      {% endif %}
+      {% if page.next %}
+      <a href="{{ page.next.url | relative_url }}" rel="next"><span class="post-meta">Newer post →</span><span>{{ page.next.title | escape }}</span></a>
+      {% endif %}
+    </nav>
+    {% endif %}
+    <a href="{{ '/blog/' | relative_url }}">← All posts</a>
+  </footer>
+</article>
