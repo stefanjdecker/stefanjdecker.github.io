@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ site.lang }}">
+<html lang="{{ page.lang | default: site.lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +13,7 @@
   <meta property="og:type" content="{% if page.layout == 'post' %}article{% elsif page.url == '/' %}profile{% else %}website{% endif %}">
   {% if page.layout == 'post' %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">{% endif %}
   <meta property="og:url" content="{{ page.url | absolute_url }}">
-  <meta property="og:image" content="{{ '/assets/img/stefan-decker.jpg' | absolute_url }}">
+  <meta property="og:image" content="{{ page.image | default: '/assets/img/stefan-decker.jpg' | absolute_url }}">
   <link rel="alternate" type="application/atom+xml" title="Stefan Decker's Blog" href="{{ '/feed.xml' | relative_url }}">
   <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="icon" href="{{ '/favicon.png' | relative_url }}" type="image/png" sizes="32x32">

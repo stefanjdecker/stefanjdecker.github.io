@@ -13,7 +13,7 @@ lead: Notes on knowledge graphs, AI, data spaces, and research.
 {% if site.posts.size > 0 %}
 <div class="post-list">
   {% for post in site.posts %}
-  <article class="post-preview" aria-labelledby="post-{{ forloop.index }}">
+  <article class="post-preview" lang="{{ post.lang | default: site.lang }}" aria-labelledby="post-{{ forloop.index }}">
     <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%e %B %Y" }}</time></p>
     <h2 id="post-{{ forloop.index }}"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
     <p>{{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncatewords: 45 | escape }}</p>
