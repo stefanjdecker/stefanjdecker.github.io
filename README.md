@@ -17,6 +17,7 @@ on github.com or pushing a commit is all it takes to publish.
 | `for-students-and-staff/*.md` | Student/staff guides (cards for them live in `_includes/guides.html`) |
 | `media-gallery.html` | Soundbites and the "Media Gallery" Google Drive folder |
 | `blog.md` | Blog index; automatically lists published posts, newest first |
+| `open-source.md` | Open source projects, descriptions, and links; add new projects here |
 | `_posts/YYYY-MM-DD-title.md` | Published blog entries |
 | `_drafts/post-template.md` | Starter template; drafts are not published |
 | `_layouts/post.html` | Blog entry layout, date, author, and older/newer links |
